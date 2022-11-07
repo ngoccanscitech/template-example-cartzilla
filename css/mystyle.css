@@ -93,7 +93,7 @@ text-transform: uppercase;
     color: #130B04;
 }
 
-#carousel-custom .tns-controls {
+.carousel-custom .tns-controls {
     display: block!important;
 }
 
@@ -192,4 +192,24 @@ body{
 /* Card Product */
 .star-rating__number {
   color: #C4C4C4;
+}
+
+/* News */
+.new-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  /* or 175% */
+}
+
+.new-short-body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #202020;
 }
