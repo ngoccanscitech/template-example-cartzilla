@@ -1,0 +1,195 @@
+:root {
+    --cz-primary: #DA1B0C;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  color: #130B04;
+}
+
+.text-primary {
+    color: var(--cz-primary)!important;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.topbar-dark .topbar-link>i {
+    color: var(--cz-light);
+}
+
+.topbar-dark .topbar-text, .topbar-dark .topbar-link {
+    color: var(--cz-light);
+}
+
+.topbar-dark .topbar-link:hover {
+    color: var(--cz-red);;
+}
+
+/* Slider */
+
+.slider__card--custom {
+  --cz-card-bg: unset;
+}
+
+.slider__card--custom .card-img-top {
+  transform: skewX(-10deg);
+}
+
+.slider__card--custom .card__icon {
+  width: 80%;
+}
+
+@media ((min-width: 992px)) {
+  .slider-lg--pl-3 {
+    padding-left: 48px;
+  }
+  .tns-nav {
+    left: unset!important;
+    right: -14%;
+    top: 50%;
+    width: 40%!important;
+  }
+}
+
+.slider__title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 56px;
+/* or 175% */
+
+text-transform: uppercase;
+}
+
+
+/* Sản phẩm nổi bật */
+
+#trending-products-waves {
+  margin-top: -229px;
+  padding-top: 229px!important;
+  background-image: url('../img/wave-haikei.svg');
+  background-repeat: no-repeat;
+}
+
+.text-brand {
+    letter-spacing: 0.25rem;  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.h1-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #130B04;
+}
+
+#carousel-custom .tns-controls {
+    display: block!important;
+}
+
+main.page-wrapper {
+    background: #f4f4f4;
+}
+
+/* #tns2 > .tns-item {
+    padding-right: 0;
+    margin-right: 20px;
+} */
+
+/* Slick Carousel */
+body{
+    background-color: #F5F5FF;
+  }
+  .wrapper{
+    padding: 70px 0;
+  }
+  /* Default slide */
+  .center-slider .slick-slide{
+    background-color: #b32532;
+    color: #FFF;
+    height: 200px;
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+  }
+  .center-slider .slick-slide,
+  .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+    transform: scale(0.8, 0.8);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Active center slide (You can change anything here for cenetr slide)*/
+  .center-slider .slick-center,
+  .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+    transform: scale(1.1);
+    background-color: #000000;
+  }
+  .center-slider .slick-current.slick-active{
+    transform: scale(1.1);
+    background-color: #000000;
+  }
+  
+  .slick-next, .slick-prev{
+    z-index: 5;
+  }
+  .slick-next{
+    right: 15px;
+  }
+  .slick-prev{
+    left: 15px;
+  }
+  .slick-next:before, .slick-prev:before{
+    color: #000;
+    font-size: 26px;
+  }
+
+.product--pb-12 {
+    padding-bottom: 0.75rem!important;
+}
+
+/* Button xem tất cả*/
+.btn--xemtatca {
+  border: 1px solid #000;
+  color: #130B04;
+}
+
+.btn--xemtatca:hover {
+  color: #FFF;
+  background-color: var(--cz-primary);
+  border: 1px solid;
+}
+
+/* Category */
+.category {
+  background-color: #fff;
+}
+
+.category__title h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* identical to box height, or 111% */
+  text-align: center;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Card Product */
+.star-rating__number {
+  color: #C4C4C4;
+}
