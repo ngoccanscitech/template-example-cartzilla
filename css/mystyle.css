@@ -23,6 +23,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 24px;
 }
 
+.banner-contact-text {
+  color: #FFFFFF;
+}
+
 .topbar-dark .topbar-link>i {
     color: var(--cz-light);
 }
@@ -99,8 +103,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-size: 32px;
   line-height: 56px;
 /* or 175% */
-
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 
@@ -111,6 +114,8 @@ text-transform: uppercase;
   padding-top: 229px!important;
   background-image: url('../img/wave-haikei.svg');
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .text-brand {
@@ -151,18 +156,23 @@ body{
     background-color: #F5F5FF;
   }
   .wrapper{
-    padding: 70px 0;
+    padding: 20px 0;
+  }
+
+  .wrapper .card {
+    --bs-card-bg: transparent;
+    background-color: transparent;
+  }
+
+  .wrapper .product-card .card-body {
+    background-color: transparent;
   }
   /* Default slide */
   .center-slider .slick-slide{
-    background-color: #b32532;
+    /* background-color: #b32532; */
     color: #FFF;
     height: 100%;
     width: 100%;
-    margin: 0 15px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: scale(0.8);
     transition: all 0.4s ease-in-out;
   }
@@ -176,11 +186,11 @@ body{
   .center-slider .slick-center,
   .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
     transform: scale(1.1);
-    background-color: #000000;
+    background-color: #fff;
   }
   .center-slider .slick-current.slick-active{
     transform: scale(1.1);
-    background-color: #000000;
+    background-color: #fff;
   }
   
   .slick-arrow {
@@ -219,6 +229,8 @@ body{
     font-size: 26px;
   }
 
+/* Slider brands */
+
 .product--pb-12 {
     padding-bottom: 0.75rem!important;
 }
@@ -227,6 +239,7 @@ body{
 .btn--xemtatca {
   border: 1px solid #000;
   color: #130B04;
+  text-transform: uppercase;
 }
 
 .btn--xemtatca:hover {
@@ -239,6 +252,7 @@ body{
 .btn--xembando {
   color: #FFF;
   background-color: var(--cz-primary);
+  text-transform: uppercase;
 }
 
 .btn--xembando:hover {
@@ -266,6 +280,10 @@ body{
   text-transform: uppercase;
 }
 
+.test {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(308deg) brightness(98%) contrast(101%);
+}
+
 /* Card Product */
 .star-rating__number {
   color: #C4C4C4;
@@ -291,7 +309,14 @@ body{
 }
 
 /* Banner*/
+#banner-sale {
+  background: url('../img/banner-1.png') top center / cover no-repeat;
+  /* position: relative; */
+}
 
+#banner-contact {
+  background: url('../img/banner-tuvan-free.svg');
+}
 
 /* Footer */
 
@@ -341,4 +366,25 @@ body{
 
 .btn {
     border-radius: unset;
+}
+
+/* Banner */
+.banner-buttom-custom {
+    position: absolute!important;
+    right: -8%;
+    top: 0;
+    background-color: #000;
+    border: 1px solid #000;
+    z-index: 99!important;
+}
+
+#banner-contact .text-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* identical to box height, or 111% */
+  text-transform: capitalize;
+  color: #FFFFFF !important;
 }
