@@ -729,8 +729,10 @@
                       bạn cần</div>
                     <p class="fs-lg text-dark pb-3 from-start delay-2">*Lorem ipsum dolor sit amet, consectetur
                       adipiscing elit.</p>
-                    <div class="d-table scale-up delay-4 mx-auto mx-lg-0"><a class="btn btn-primary"
-                        href="shop-grid-ls.html">Shop Now<i class="ci-arrow-right ms-2 me-n1"></i></a></div>
+                    <div class="d-table scale-up delay-4 mx-auto mx-lg-0">
+                      <a class="btn btn-thamgiangay"
+                        href="shop-grid-ls.html">Tham gia ngay<i class="ci-arrow-right ms-2 me-n1"></i>
+                      </a></div>
                   </div>
                 </div>
               </div>
@@ -1980,16 +1982,25 @@
     </div> 
 
     <!-- Banners Gợi ý-->
-    <div id="banner-sale" class="d-flex flex-column justify-content-center">
-      <div class="py-4 my-2 px-4 text-center">
-        <div class="py-1">
-          <h5 class="text-light mb-2 banner-sale-text">COMBO CHO NGƯỜI MỚI BẮT ĐẦU VỚI GIÁ ƯU ĐÃI LÊN ĐẾN 20% MUA NGAY HÔM NAY</h5>
-          <div class="pt-3">
-            <a class="btn btn--xembando" href="shop-grid-ls.html">Mua hàng
-              <i class="ci-arrow-right ms-1"></i>
-            </a>
+    <div id="banner-recommend" class="d-flex flex-column justify-content-center">
+      <div class="container">
+          <div class="d-flex justify-content-between align-items-center banner-content">
+
+            <div class="banner-caption">
+              <p class="text-light text-brand">JAPAN GOLF</p>
+              <h3 class="text-light">gợi ý cho bạn</h3>
+            </div>
+          
+          <div class="banner-button text-end text-mob-center pb-mob-1">
+              <a class="btn btn--xembando" href="shop-grid-ls.html">Mua hàng
+                <i class="ci-arrow-right ms-1"></i>
+              </a>
           </div>
-        </div>
+
+          </div>
+          
+
+        <div class="background-overlay"></div>
       </div>
     </div>
 
@@ -3236,23 +3247,115 @@
           <p class="text-center text-primary text-brand">JAPAN GOLF</p>
           <h2 class="text-center h1-title">TIN TỨC & SỰ KIỆN</h2>
 
-          <!-- Slider list products -->
+          <!-- Slider list news -->
           <div class="row">
             <div class="col-md-12">
-              <div class="carousel-custom">
+              <div id="news" class="carousel-custom">
                 <div class="tns-carousel tns-controls-static tns-controls-outside">
                   <div class="tns-carousel-inner"
-                    data-carousel-options='{"items": 2,"nav":false, "controls": true, "autoHeight": true, "responsive": {"0":{"items":1}, "480":{"items":2}, "720":{"items":3}, "991":{"items":2}, "1140":{"items":3}, "1300":{"items":3, "gutter": 20}, "1500":{"items":3}}}'>
+                    data-carousel-options='{"items": 2,"nav":false, "controls": true, "autoHeight": true, "responsive": {"0":{"items":1}, "480":{"items":2}, "720":{"items":2, "gutter":20}, "991":{"items":2, "gutter":20}, "1140":{"items":2, "gutter":20}, "1300":{"items":3, "gutter": 20}, "1500":{"items":3}}}'>
                     <div class="card product-card">
                       <a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/news-1.png"
                           alt="Product"></a>
                       <div class="card-body py-3 px-0">
                         <a class="product-meta d-block fs-xs pb-1" href="#">05/07/2022</a>
-                        <h3 class="product-title new-title"><a href="shop-single-v1.html">Fairway Woods Taylormade M6</a>
+                        <h3 class="product-title">
+                          <a href="shop-single-v1.html" class="new-title new-card-description">
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          </a>
                         </h3>
                         <div class="text-description new-short-body">
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply
-                          ...
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                        </div>
+                      </div>
+                      <div class="card-body card-body-hidden">
+                        <div class="text-center pb-2">
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-75">
+                            <label class="form-option-label" for="s-75">7.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-80" checked>
+                            <label class="form-option-label" for="s-80">8</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-85">
+                            <label class="form-option-label" for="s-85">8.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-90">
+                            <label class="form-option-label" for="s-90">9</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i
+                            class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view"
+                            data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+                      </div>
+                    </div>
+                    <div class="card product-card">
+                      <a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/news-2.png"
+                          alt="Product"></a>
+                      <div class="card-body py-3 px-0">
+                        <a class="product-meta d-block fs-xs pb-1" href="#">05/07/2022</a>
+                        <h3 class="product-title">
+                          <a href="shop-single-v1.html" class="new-title new-card-description">
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          </a>
+                        </h3>
+                        <div class="text-description new-short-body">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                        </div>
+                      </div>
+                      <div class="card-body card-body-hidden">
+                        <div class="text-center pb-2">
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-75">
+                            <label class="form-option-label" for="s-75">7.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-80" checked>
+                            <label class="form-option-label" for="s-80">8</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-85">
+                            <label class="form-option-label" for="s-85">8.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-90">
+                            <label class="form-option-label" for="s-90">9</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i
+                            class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view"
+                            data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+                      </div>
+                    </div>
+                    <div class="card product-card">
+                      <a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/news-3.png"
+                          alt="Product"></a>
+                      <div class="card-body py-3 px-0">
+                        <a class="product-meta d-block fs-xs pb-1" href="#">05/07/2022</a>
+                        <h3 class="product-title">
+                          <a href="shop-single-v1.html" class="new-title new-card-description">
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          </a>
+                        </h3>
+                        <div class="text-description new-short-body">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
                         </div>
                       </div>
                       <div class="card-body card-body-hidden">
@@ -3285,11 +3388,17 @@
                           alt="Product"></a>
                       <div class="card-body py-3 px-0">
                         <a class="product-meta d-block fs-xs pb-1" href="#">05/07/2022</a>
-                        <h3 class="product-title new-title"><a href="shop-single-v1.html">Fairway Woods Taylormade M6</a>
+                        <h3 class="product-title">
+                          <a href="shop-single-v1.html" class="new-title new-card-description">
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          </a>
                         </h3>
                         <div class="text-description new-short-body">
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply
-                          ...
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
                         </div>
                       </div>
                       <div class="card-body card-body-hidden">
@@ -3318,15 +3427,64 @@
                       </div>
                     </div>
                     <div class="card product-card">
-                      <a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/news-1.png"
+                      <a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/news-2.png"
                           alt="Product"></a>
                       <div class="card-body py-3 px-0">
                         <a class="product-meta d-block fs-xs pb-1" href="#">05/07/2022</a>
-                        <h3 class="product-title new-title"><a href="shop-single-v1.html">Fairway Woods Taylormade M6</a>
+                        <h3 class="product-title">
+                          <a href="shop-single-v1.html" class="new-title new-card-description">
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          </a>
                         </h3>
                         <div class="text-description new-short-body">
                           Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply
-                          ...
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                        </div>
+                      </div>
+                      <div class="card-body card-body-hidden">
+                        <div class="text-center pb-2">
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-75">
+                            <label class="form-option-label" for="s-75">7.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-80" checked>
+                            <label class="form-option-label" for="s-80">8</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-85">
+                            <label class="form-option-label" for="s-85">8.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size1" id="s-90">
+                            <label class="form-option-label" for="s-90">9</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i
+                            class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view"
+                            data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+                      </div>
+                    </div>
+                    <div class="card product-card">
+                      <a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img src="img/news-3.png"
+                          alt="Product"></a>
+                      <div class="card-body py-3 px-0">
+                        <a class="product-meta d-block fs-xs pb-1" href="#">05/07/2022</a>
+                        <h3 class="product-title">
+                          <a href="shop-single-v1.html" class="new-title new-card-description">
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                            Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          </a>
+                        </h3>
+                        <div class="text-description new-short-body">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
+                          Lorem Ipsum is simply dummy textof the printing and Lorem Ipsum is
                         </div>
                       </div>
                       <div class="card-body card-body-hidden">
@@ -3360,7 +3518,7 @@
             </div>
           </div>
 
-          <div class="text-center pt-3"><a class="btn btn--xemtatca" href="shop-grid-ls.html">Xem tất cả<i
+          <div class="text-center py-3"><a class="btn btn--xemtatca" href="shop-grid-ls.html">Xem tất cả<i
                 class="ci-arrow-right ms-1"></i></a>
           </div>
         </section>
@@ -3371,7 +3529,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="ps-5 py-5 ms-lg-5">
+            <div class="px-5 py-5 ms-lg-5">
               <div class="py-1">
                 <h5 class="mb-2 text-heading">Nhận tư vấn miễn phí</h5>
                 <p class="text-description banner-contact-text">Đăng ký để nhận thông tin ưu đãi mới nhất, truy cập vào các giao dịch độc quyền và hơn thế nữa.</p>
@@ -3410,7 +3568,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 pb-4">
+              <div class="col-md-6">
                 <div class="d-flex align-items-start justify-content-between logo-contact">
                   <img src="img/footer/icon-location.svg" alt="">
                   <div class="ms-3">
@@ -3427,15 +3585,15 @@
                 </div>
   
                 <!-- Button Footer -->
-                <div class="pt-3">
+                <div class="py-3">
                   <a class="btn btn--xembando" href="shop-grid-ls.html">Xem tất cả
                     <i class="ci-arrow-right ms-1"></i>
                   </a>
                 </div>
                 <hr class="d-sm-none">
               </div>
-              <div class="col-md-6 pb-4">
-                <div class="d-flex align-items-start justify-content-between logo-contact">
+              <div class="col-md-6">
+                <div class="d-flex align-items-start justify-content-between logo-contact pt-mob-1">
                   <img src="img/footer/icon-location.svg" alt="">
                   <div class="ms-3">
                     <span class="info-contact">Showroom
@@ -3452,7 +3610,7 @@
                 </div>
   
                 <!-- Button Footer -->
-                <div class="pt-3">
+                <div class="py-3">
                   <a class="btn btn--xembando" href="shop-grid-ls.html">Xem tất cả
                     <i class="ci-arrow-right ms-1"></i>
                   </a>
@@ -3471,7 +3629,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-7">
-                    <ul class="widget-list">
+                    <ul class="widget-list pb-mob-1">
                       <li class="widget-list-item"><a class="widget-list-link" href="#">
                           Về Chúng Tôi
                         </a></li>
@@ -3491,7 +3649,7 @@
                     <hr class="d-sm-none">
                   </div>
                   <div class="col-md-5">
-                    <ul class="widget-list">
+                    <ul class="widget-list pt-mob-1">
                       <li class="widget-list-item"><a class="widget-list-link" href="#">
                           Sản phẩm
                         </a></li>
