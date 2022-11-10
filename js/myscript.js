@@ -50,7 +50,7 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 375,
       settings: {
         centerPadding: '40px',
         slidesToShow: 2
