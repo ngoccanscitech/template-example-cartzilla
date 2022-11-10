@@ -16,6 +16,13 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 700;
 }
 
+@media only screen and (min-width: 992px) {
+  .mt-lg-n8 {
+    margin-top: -8rem !important
+  }
+}
+
+
 .text-description {
   font-family: 'Roboto';
   font-style: normal;
@@ -577,6 +584,17 @@ body{
   color: #FFFFFF !important;
 }
 
+
+.h-160 {
+  height: 160px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 769px) {
+  
+}
+
+
 /* Mobile */
 
 @media only screen and (max-width: 600px) {
@@ -588,6 +606,13 @@ body{
   }
   .text-mob-center {
     text-align: center!important;
+  }
+  .category__title h3 {
+    font-size: 24px;
+    letter-spacing: initial;
+  }
+  .h-160 {
+    height: initial;
   }
 }
 
@@ -652,7 +677,3 @@ transform: scale(1.1) skewX(-10deg);
 }
 
 /* End fade image caption on hover in */
-
-.mt-lg-n8 {
-  margin-top: -8rem !important
-}

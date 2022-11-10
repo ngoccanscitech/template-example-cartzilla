@@ -11,8 +11,22 @@ $(document).ready(function(){
       autoplaySpeed: 5000,
       autoplay: false,
       prevArrow:`<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
-        nextArrow:`<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`
-    });
+      nextArrow:`<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
+      responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
 
     // Brands List
     $('.brands-center-slider').slick({
@@ -39,7 +53,7 @@ $(document).ready(function(){
       breakpoint: 480,
       settings: {
         centerPadding: '40px',
-        slidesToShow: 1
+        slidesToShow: 2
       }
     }
   ]
