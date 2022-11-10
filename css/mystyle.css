@@ -2,6 +2,7 @@
     --cz-primary: #DA1B0C;
 }
 
+
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: #130B04;
   font-weight: 700;
@@ -143,7 +144,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 main.page-wrapper {
-    background: #f4f4f4;
+    background: #FFF;
 }
 
 /* #tns2 > .tns-item {
@@ -155,6 +156,32 @@ main.page-wrapper {
 body{
     background-color: #F5F5FF;
   }
+
+  /* List brands */
+
+  .brands {
+    padding: 20px;
+  }
+
+  .slick-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brands-center-slider .slick-center svg rect{
+    opacity: 1;
+  }
+
+  .brands-center-slider .slick-center .change-opacity-svg {
+    opacity: 1;
+  }
+
+  .brands-center-slider .change-opacity-svg {
+    opacity: 0.4;
+  }
+
+  /* San pham noi bat  */
   .wrapper{
     padding: 20px 0;
   }
@@ -236,6 +263,19 @@ body{
 }
 
 /* Button xem tất cả*/
+.banner-btn-xemtatca {
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+.banner-btn-xemtatca:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: 1px solid #000!important;
+}
+
 .btn--xemtatca {
   border: 1px solid #000;
   color: #130B04;
@@ -339,7 +379,44 @@ body{
 /* Banner*/
 #banner-sale {
   background: url('../img/banner-1.png') top center / cover no-repeat;
-  /* position: relative; */
+  max-width: 1440px;
+  height: 420px;
+  position: relative;
+}
+
+
+.banner-sale-content {
+  z-index: 2;
+  width: 70%!important;
+}
+
+.banner-sale-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(265.03deg, rgba(0, 0, 0, 0.62) 26.94%, rgba(0, 0, 0, 0) 100.84%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.banner-sale-text {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-size: 32px;
+  line-height: 70px;
+  /* or 219% */
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-sale-text {
+    font-size: 100%;
+  }
 }
 
 #banner-recommend {
